@@ -1,0 +1,51 @@
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{   
+    
+    width: 100%;
+    height: 100%; 
+    background: url('https://i0.wp.com/ijames.com.ng/wp-content/uploads/2020/09/windows-10-wallpaper-scaled.jpg?fit=2560%2C1440&ssl=1') top /100% no-repeat;
+   }
+h3{
+    margin-top: 5%;
+}
+#dangki{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+#dangki .input-box{
+    margin-top: 5px;
+    padding: 7.5px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-box{
+    font-size: 15px;
+    font-family: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center; 
+     margin-top: 15px;
+}
+.btn-box:hover{
+    color: red;
+}
+.btn-info{
+    color: rgb(5, 5, 5);
+    font-family: none;
+    padding: 15px;
+    font-size: 20px;
+
+}
+.btn-info:hover{
+    color: rgb(240, 11, 11);
+}
