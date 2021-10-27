@@ -1,0 +1,349 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*từ ngoài vào trong,từ trên xuống dưới,tổng quan đến chi tiết*/
+/*
+1.vị trí
+2.kích thước(wight,height)
+3.màu sắc
+4.kiểu dáng(kiểu chữ,hình tròn,vuông,..vv)
+*/
+#main{
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+.text-white{
+    color:#fff !important;
+
+}
+#nav{
+    display:inline-block;
+}
+#header{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    height: 46px;
+    background-color: black;
+    left: 0;
+    right: 0;
+
+}
+#nav li{
+    position: relative;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow-dow{
+    color: #fff;
+}
+
+#header .search-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+#header .search-btn{
+   float:right;
+   color: #fff;
+   line-height: 46px;
+   padding: 0 21px;
+}
+
+
+#nav .subnav{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(5, 15,5,0.3);
+}
+#nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+#nav .subnav a{
+    padding: 0 15px;
+    color: black;
+    line-height: 38px;  
+   
+}
+#nav >li  a{
+   text-decoration: none;/*bỏ gạch chân chữ*/
+   line-height: 46px;/*chỉnh sửa chiều cao của chữ để căn chữ ở giữa dòng*/
+   padding: 0 24px 0 24px ;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color: black;  
+    display: block;
+}
+#nav li:hover a{
+    display: inline-block;
+}
+#slider{
+   background: url('https://i0.wp.com/ijames.com.ng/wp-content/uploads/2020/09/windows-10-wallpaper-scaled.jpg?fit=2560%2C1440&ssl=1')top  /100% no-repeat;
+   padding-top:50%;
+   margin-top: 46px;
+   position: relative;
+   
+   
+}
+#slider .text-content{
+    width: 35%;
+    position: absolute;
+    top: 230px;
+    left: 12%;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+    height: 30%; 
+}
+#slider  .text-heading{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: none;
+    color: Black;
+    font-weight: bold;
+    top: -90px;
+    
+}
+#slider .input-box >input{
+    
+    margin-top: 5px;
+    padding: 7.5px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+    
+}
+
+#slider  .btn-box{
+    font-size: 15px;
+    font-family: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center; 
+     margin-top: 15px;
+}
+#slider .btn-box:hover{
+    color: red;
+}
+h2{ margin-top: 10px;
+    letter-spacing: 5px;   
+    color: rgb(5, 4, 4);
+}h5{
+    margin-top: 10px;
+}
+h5:hover{
+    color: red;   
+}
+.text-heading   
+.image >input{
+    margin-top: 10px;
+    left: 10px;
+   font-size: 15px;
+   border-radius: 5px;
+   
+
+}
+#content{
+}
+#content .content-section{
+    
+    width: 100%;
+    height: 800px;
+    left: 0;
+    right: 0;
+    padding: 64px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+#content .section-heading{
+    color: rgba(250, 234, 8, 1);
+    font-size: 35px;
+    
+    
+}
+#content .section-subheading{
+    margin-top: 15px;
+    font-size: 25px;
+    color: rgba(250, 8, 8, 0.6)
+}
+#content .content-body{
+    text-align: left;
+    padding: 32px 20px;
+    line-height: 25px;
+}
+#content .logo-list{
+    margin-top: 48px;
+}
+#content .logo-item{
+    float: left;
+    width:50%;
+}
+#kh{ 
+ background-image:linear-gradient(0,rgba(255,255,0,0.5),rgba(0,5,255,0.5));
+ margin-top: 90px;
+}
+#kh .kh-section{
+   
+    padding: 64px 0 ;
+    width: 100%;   
+    height: 800px;
+    text-align: center;
+    
+}
+#kh .kh-content{   
+}  
+
+#kh .kh-section-heading{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 3px;
+    
+}
+#kh .kh-section-subheading{
+    font-size: 25px;
+    color: rgba(2, 17, 2, 0.7);
+    margin-top: 16px;
+    
+}
+#kh .kh-list{
+    color: rgb(226, 12, 12);
+    height: 400px;;
+    
+}
+#kh .kh-body-header{
+    margin-top: 40px;
+    font-size: 30px;   
+}
+#kh .kh-body-content{
+    margin-top: 15px;
+}
+#kh .kh-body-btn{
+    text-decoration: none;
+   padding: 11px 16px;
+    background-color: #ccc;
+    color: black;
+    display: inline-block;
+    margin-top: 18px;
+    border-radius: 10px;
+    
+}
+#kh .kh-body-btn:hover{
+    color: white;
+    background-color: black;
+}
+#kh .kh-item{
+
+    float: left;
+    height: 300px;
+    width: 25%;
+    padding: 64px 32px;
+}
+#kh .kh-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#kh .kh-img:hover{
+    opacity: 0.5;
+}
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(5, 15,5,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.model.open{
+    display: flex;
+}
+.model-container{
+    width: 50%;
+    position: relative;
+    background-color: black;
+}
+.model-close{
+    position: absolute;
+    color:#fff;
+    padding: 10px;
+    top:0;
+    right: 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.model-close:hover{
+    background-color: rgb(255, 0, 0);
+    opacity: 1;
+}
+header.model-header {
+    width: 100%;
+    color: #fff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    font-size: 25px;
+}
+label.model-label {
+    margin-bottom: 12px;
+    font-size: 20px;
+    display: block;
+}
+.model-input{
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+.model-body{
+    padding: 20px 10px;
+    color: #fff;
+    background-color:rgba(41, 40, 40, 0.767);
+}
+
+#Sign-in {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.8;
+}
+#Sign-in:hover{
+opacity: 1;
+}
+.model-footer{
+    background-color: rgba(41, 40, 40, 0.767);
+    padding: 0 15px 15px 0;
+    text-align: right;
+    color:#fff;
+}
+.model-footer a{
+    color: aquamarine;
+}
+.Edit_pass{
+    margin-top: 10px;
+}
